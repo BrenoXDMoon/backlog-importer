@@ -1,0 +1,710 @@
+{
+  "backlog": [
+    {
+      "id": "RNF0011",
+      "category": "requisito_nao_funcional",
+      "entity": "Geral",
+      "group": "Geral",
+      "title": "Tempo de resposta para consultas",
+      "description": "Toda consulta de usuário deve ter resposta em no máximo 1 segundo.",
+      "status": "todo"
+    },
+    {
+      "id": "RNF0012",
+      "category": "requisito_nao_funcional",
+      "entity": "Geral",
+      "group": "Geral",
+      "title": "Log de transação",
+      "description": "Para toda operação de escrita (Inserção ou Alteração) deve ser registado data, hora, usuário responsável além de manter os dados alterados.",
+      "status": "todo"
+    },
+
+    {
+      "id": "RF0011",
+      "category": "requisito_funcional",
+      "entity": "Jogo",
+      "group": "Cadastro de Jogos",
+      "title": "Cadastrar jogo",
+      "description": "O sistema deve manter um cadastro único para jogos.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0012",
+      "category": "requisito_funcional",
+      "entity": "Jogo",
+      "group": "Cadastro de Jogos",
+      "title": "Inativar cadastro de jogo",
+      "description": "O sistema deve possibilitar que jogos sejam inativados.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0013",
+      "category": "requisito_funcional",
+      "entity": "Jogo",
+      "group": "Cadastro de Jogos",
+      "title": "Inativar jogo de forma automática",
+      "description": "O sistema deve inativar jogos sem estoque e que não possuem venda com valor inferior a parâmetro predefinido no sistema.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0014",
+      "category": "requisito_funcional",
+      "entity": "Jogo",
+      "group": "Cadastro de Jogos",
+      "title": "Alterar cadastro de jogo",
+      "description": "O sistema deve possibilitar a alteração de dados cadastrais para os jogos.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0015",
+      "category": "requisito_funcional",
+      "entity": "Jogo",
+      "group": "Cadastro de Jogos",
+      "title": "Consulta de jogos",
+      "description": "O sistema deve possibilitar que um jogo seja consultado com base em um filtro definido pelo usuário. Todos os campos utilizados para identificação do jogo podem ser utilizados como filtro, tanto de forma combinada como de forma isolada.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0016",
+      "category": "requisito_funcional",
+      "entity": "Jogo",
+      "group": "Cadastro de Jogos",
+      "title": "Ativar cadastro de jogos",
+      "description": "Deve ser possível ativar o cadastro de um jogo.",
+      "status": "todo"
+    },
+    {
+      "id": "RNF0021",
+      "category": "requisito_nao_funcional",
+      "entity": "Jogo",
+      "group": "Cadastro de Jogos",
+      "title": "Código de jogo",
+      "description": "Todo jogo cadastrado deve receber um código único no sistema.",
+      "status": "todo"
+    },
+    {
+      "id": "RNF0013",
+      "category": "requisito_nao_funcional",
+      "entity": "Jogo",
+      "group": "Cadastro de Jogos",
+      "title": "Cadastro de domínios",
+      "description": "Deve haver um script de implantação do sistema que insere todos os registros de tabelas de domínio necessárias por ex: grupo de precificação, autor, editora, fornecedor, etc...",
+      "status": "todo"
+    },
+    {
+      "id": "RN0011",
+      "category": "regra_de_negocio",
+      "entity": "Jogo",
+      "group": "Cadastro de Jogos",
+      "title": "Dados obrigatórios para o cadastro de um jogo",
+      "description": "Para todo jogo cadastrado é obrigatório o cadastro dos seguintes dados: gênero, ano, título, editora, sinopse, imagem, data de lançamento, multijogador, preço, plataforma e idiomas disponíveis.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0012",
+      "category": "regra_de_negocio",
+      "entity": "Jogo",
+      "group": "Cadastro de Jogos",
+      "title": "Associação com categorias",
+      "description": "Um jogo pode estar associado com um ou mais gêneros.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0013",
+      "category": "regra_de_negocio",
+      "entity": "Jogo",
+      "group": "Cadastro de Jogos",
+      "title": "Definindo valor de venda",
+      "description": "Todo jogo após cadastrado deverá ser associado a um grupo de precificação onde o valor deverá ter como base a margem de lucro parametrizado para o grupo definido no cadastro do jogo.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0014",
+      "category": "regra_de_negocio",
+      "entity": "Jogo",
+      "group": "Cadastro de Jogos",
+      "title": "Validar margem de lucro",
+      "description": "Um jogo somente pode ter seu valor alterado se estiver dentro da margem de lucro definida pelo critério de grupo de precificação. Para um jogo ter seu valor alterado para baixo da margem de lucro definida pelo grupo de precificação é necessária uma autorização de um gerente de vendas.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0015",
+      "category": "regra_de_negocio",
+      "entity": "Jogo",
+      "group": "Cadastro de Jogos",
+      "title": "Associar motivo de inativação",
+      "description": "Todo jogo que for inativado manualmente deve ter uma justificativa e uma categoria de inativação associada.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0016",
+      "category": "regra_de_negocio",
+      "entity": "Jogo",
+      "group": "Cadastro de Jogos",
+      "title": "Associar motivo de inativação automática",
+      "description": "Todo cadastro de jogo inativado de forma automática deve ser categorizado como FORA DE MERCADO.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0017",
+      "category": "regra_de_negocio",
+      "entity": "Jogo",
+      "group": "Cadastro de Jogos",
+      "title": "Associar motivo de ativação",
+      "description": "Todo jogo que for ativado deve ter uma justificativa e uma categoria de ativação associada.",
+      "status": "todo"
+    },
+
+    {
+      "id": "RF0021",
+      "category": "requisito_funcional",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Cadastrar cliente",
+      "description": "O sistema deve possibilitar o cadastro de clientes.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0022",
+      "category": "requisito_funcional",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Alterar cliente",
+      "description": "O sistema deve possibilitar a alteração de dados cadastrais de clientes.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0023",
+      "category": "requisito_funcional",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Inativar cadastro de cliente",
+      "description": "O sistema deve possibilitar que clientes sejam inativados.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0024",
+      "category": "requisito_funcional",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Consulta de clientes",
+      "description": "O sistema deve possibilitar que um cliente seja consultado com base em um filtro definido pelo usuário. Todos os campos utilizados para identificação do cliente podem ser utilizados como filtro, tanto de forma combinada como de forma isolada.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0025",
+      "category": "requisito_funcional",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Consulta de transações",
+      "description": "O sistema deve disponibilizar no cadastro de clientes a consulta de todas transações já realizadas por ele.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0026",
+      "category": "requisito_funcional",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Cadastro de endereços de entrega",
+      "description": "Deve ser possível associar diversos endereços de entrega ao cadastro de um cliente. Cada cadastro de endereço deve ser identificado com um nome composto de uma frase curta.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0027",
+      "category": "requisito_funcional",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Cadastro de cartões de crédito",
+      "description": "Deve ser possível associar diversos cartões de crédito ao cadastro de um cliente. Deve haver um cartão de crédito configurado como preferencial.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0028",
+      "category": "requisito_funcional",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Alteração apenas de senha",
+      "description": "O sistema deve possibilitar que a senha do usuário seja alterada sem que seja necessária a alteração de todos os dados cadastrais.",
+      "status": "todo"
+    },
+    {
+      "id": "RNF0031",
+      "category": "requisito_nao_funcional",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Senha forte",
+      "description": "A senha cadastrada pelo usuário deve ser composta de pelo menos 8 caracteres, ter letras maiúsculas e minúsculas além de conter caracteres especiais.",
+      "status": "todo"
+    },
+    {
+      "id": "RNF0032",
+      "category": "requisito_nao_funcional",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Confirmação de senha",
+      "description": "O usuário obrigatoriamente deve digitar duas vezes a mesma senha no momento do registro da mesma.",
+      "status": "todo"
+    },
+    {
+      "id": "RNF0033",
+      "category": "requisito_nao_funcional",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Senha criptografada",
+      "description": "A senha deve ser criptografada.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0034",
+      "category": "requisito_funcional",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Alteração apenas de endereços",
+      "description": "O sistema deve possibilitar que endereços de entrega ou cobrança possam ser alterados ou adicionados de forma simples sem a necessidade da edição dos demais dados cadastrais.",
+      "status": "todo"
+    },
+    {
+      "id": "RNF0035",
+      "category": "requisito_nao_funcional",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Código de cliente",
+      "description": "Todo cliente cadastrado deve receber um código único no sistema.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0021",
+      "category": "regra_de_negocio",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Cadastro de endereço de cobrança",
+      "description": "Para todo cliente cadastrado é obrigatório o registro de ao menos um endereço de cobrança.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0022",
+      "category": "regra_de_negocio",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Cadastro de endereço de entrega",
+      "description": "Para todo cliente cadastrado é obrigatório o registro de ao menos um endereço de entrega.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0023",
+      "category": "regra_de_negocio",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Composição do registro de endereços",
+      "description": "Todo cadastro de endereços associados a clientes deve ser composto dos seguintes dados: Tipo de residência (Casa, Apartamento etc.), Tipo Logradouro, Logradouro, Número, Bairro, CEP, Cidade, Estado e País. Todos os campos anteriores são de preenchimento obrigatório. Opcionalmente pode ser preenchido um campo observações.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0024",
+      "category": "regra_de_negocio",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Composição do registro de cartões de crédito",
+      "description": "Todo cartão de crédito associado a um cliente deverá ser composto pelos seguintes campos: Nº do Cartão, Nome impresso no Cartão, Bandeira do Cartão e Código de Segurança.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0025",
+      "category": "regra_de_negocio",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Bandeiras permitidas para registro de cartões de crédito",
+      "description": "Todo cartão de crédito associado a um cliente deverá ser de alguma bandeira registrada no sistema.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0026",
+      "category": "regra_de_negocio",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Dados obrigatórios para o cadastro de um cliente",
+      "description": "Para todo cliente cadastrado é obrigatório o cadastro dos seguintes dados: Gênero, Nome, Data de Nascimento, CPF, Telefone (deve ser composto pelo tipo, DDD e número), e-mail, senha, endereço residencial.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0027",
+      "category": "regra_de_negocio",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Ranking de cliente",
+      "description": "O cliente deve receber um ranking numérico com base no seu perfil de compra.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0028",
+      "category": "regra_de_negocio",
+      "entity": "Cliente",
+      "group": "Cadastro de Clientes",
+      "title": "Validar retorno da operadora de cartão de crédito",
+      "description": "Somente deve-se dar baixa no estoque de itens cuja compra tenha sido efetivada, isso significa que o status não é mais EM PROCESSAMENTO. Todo item que faça parte de uma compra não aprovada deve ser desbloqueado e mantido em estoque.",
+      "status": "todo"
+    },
+
+    {
+      "id": "RF0031",
+      "category": "requisito_funcional",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Gerenciar carrinho de compra",
+      "description": "O sistema deve permitir que produtos sejam colocados em um repositório temporário para futura compra (carrinho de compra). Deve ser possível adicionar, alterar e excluir itens de compra no carrinho. Também deve ser possível visualizar os itens no carrinho.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0032",
+      "category": "requisito_funcional",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Definir quantidade de itens para o carrinho",
+      "description": "Deve ser possível editar a quantidade de cada item ao adicionar um produto no carrinho. Também deve ser possível editar a quantidade de itens de um carrinho na visualização dos itens já adicionados.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0033",
+      "category": "requisito_funcional",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Realizar compra",
+      "description": "Deve ser possível a partir de um carrinho de compra realizar uma compra.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0034",
+      "category": "requisito_funcional",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Calcular frete",
+      "description": "O sistema deve calcular o frete da compra com base nos itens selecionados e o endereço apontado pelo cliente.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0035",
+      "category": "requisito_funcional",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Selecionar endereço de entrega",
+      "description": "O cliente pode selecionar qualquer endereço de entrega previamente cadastrado em seu perfil ou um novo endereço de entrega pode ser cadastrado. Caso um novo endereço de entrega seja inserido, deve-se dar a possibilidade que o mesmo seja incorporado ao perfil do cliente.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0036",
+      "category": "requisito_funcional",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Selecionar forma de pagamento",
+      "description": "O cliente pode selecionar qualquer cartão de crédito previamente cadastrado em seu perfil ou um novo cartão de crédito pode ser cadastrado. Caso um novo cartão de crédito seja cadastrado, deve-se dar a possibilidade que o mesmo seja incorporado ao perfil do cliente. O cliente também poderá utilizar um cupom de troca ou um cupom promocional válido. Deve-se possibilitar que o pagamento seja feito utilizando tanto cupons de troca, promocionais e cartão de crédito.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0037",
+      "category": "requisito_funcional",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Finalizar Compra",
+      "description": "Uma compra deve ser finalizada após a seleção da forma de pagamento e endereço de entrega. Após a finalização o status da compra deve ser EM PROCESSAMENTO.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0038",
+      "category": "requisito_funcional",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Despachar produtos para entrega",
+      "description": "O sistema deve possibilitar que um usuário com perfil de administrador selecione vendas já aprovadas para serem entregues. Assim o status deve ficar EM TRÂNSITO.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0039",
+      "category": "requisito_funcional",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Produtos entregues",
+      "description": "O sistema deve possibilitar que um usuário com perfil de administrador confirme entrega de uma compra. Assim o status deve ficar ENTREGUE.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0040",
+      "category": "requisito_funcional",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Solicitar troca",
+      "description": "O sistema deve possibilitar que um item de uma compra seja trocado por um cliente através da visualização de pedidos do mesmo.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0041",
+      "category": "requisito_funcional",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Autorizar trocas",
+      "description": "O sistema deverá possibilitar que o administrador autorize pedidos ou compra com status EM TROCA. Assim o pedido passa ficar com status TROCA AUTORIZADA.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0042",
+      "category": "requisito_funcional",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Visualização de trocas",
+      "description": "O sistema deverá possibilitar que o administrador visualize todos pedidos de troca ou compra com status EM TROCA.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0043",
+      "category": "requisito_funcional",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Confirmar recebimento de itens para troca",
+      "description": "O sistema deverá possibilitar que o administrador confirme o recebimento de pedidos de troca ou compra com status EM TROCA. Nesta confirmação o administrador deverá informar se os itens trocados deverão retornar ao estoque. Em caso positivo deve-se dar entrada no estoque dos respectivos itens.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0044",
+      "category": "requisito_funcional",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Gerar cupom de troca após recebimento de itens",
+      "description": "O sistema deverá gerar um cupom de troca quando o administrador informar que os itens a serem trocados chegaram. Este cupom deverá ser disponibilizado para o cliente para ser utilizado em futuras compras.",
+      "status": "todo"
+    },
+    {
+      "id": "RNF0042",
+      "category": "requisito_nao_funcional",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Apresentar itens retirados do carrinho",
+      "description": "Deve ser apresentado na listagem de itens do carrinho os produtos removidos por atingirem o prazo determinado para finalização da compra (apresentar o tempo conforme parâmetro do sistema). Assim a opção comprar deve ser desabilitada e o itens deverão ser adicionados novamente no carrinho.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0031",
+      "category": "regra_de_negocio",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Validar estoque para adição de itens no carrinho",
+      "description": "Não deve ser permitido adicionar um item no carrinho de compra que não esteja disponível em estoque. Também deve ser validado a quantidade do item adicionado ao carrinho para que não seja adicionado mais itens do que o disponível em estoque.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0032",
+      "category": "regra_de_negocio",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Validar estoque para compra",
+      "description": "Ao solicitar a compra de itens que estejam em um carrinho deve-se garantir que tais itens ainda permanecem disponíveis em estoque.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0033",
+      "category": "regra_de_negocio",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Uso de cupom promocional para pagamento",
+      "description": "Apenas um cupom promocional pode ser utilizado por compra.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0034",
+      "category": "regra_de_negocio",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Uso de diversões cartões de crédito",
+      "description": "Uma compra pode ser paga utilizando mais de um cartão de crédito, porém o valor mínimo para ser pago com cada cartão deve ser R$ 10,00.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0035",
+      "category": "regra_de_negocio",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Uso de cupons junto a cartão de crédito",
+      "description": "Ao realizar pagamento utilizando cupons e cartões em conjunto, deve-se sempre considerar o valor máximo dos cupons. Somente neste caso é permitido que seja realizado um pagamento de um valor menor que R$ 10,00 no cartão.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0036",
+      "category": "regra_de_negocio",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Gerar cupom de troca",
+      "description": "Um cupom de troca deve ser gerado quando uma compra for paga com outros cupons em que o valor supere o valor da compra. Obs: O sistema não deve possibilitar o uso de cupons que supere a compra desnecessariamente, ex: a venda tem valor total de R$ 50,00 e o cliente possui três cupons, um com valor de R$ 20,00, outro com valor de R$ 40,00 e um terceiro com valor de R$ 35,00 o sistema não deve possibilitar o uso dos três cupons nesta compra, deve ser aceito apenas dois cupons e consequentemente gerar um cupom com a diferença de R$ 5,00, ou R$ 10,00 ou R$ 25,00.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0037",
+      "category": "regra_de_negocio",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Validar Forma de Pagamento para finalização de compra",
+      "description": "Após a finalização da compra a forma de pagamento deve ser validada. Para tal deve-se validar a validade e veracidade dos cupons de troca e promocionais que porventura foram utilizados. Também deve ser validado o aceite da compra pela respectiva operadora de cartão de crédito.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0038",
+      "category": "regra_de_negocio",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Alterar status da compra conforme processo de aprovação de forma de pagamento",
+      "description": "Caso as formas de pagamento tenham sido validadas com sucesso, a compra deve passar ter o status APROVADA. Caso contrário deve passar a ter o status REPROVADA.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0039",
+      "category": "regra_de_negocio",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Alterar status da compra para transporte",
+      "description": "Toda compra selecionada para ser entregue por um administrador deve ter seu status alterado para EM TRANSPORTE.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0040",
+      "category": "regra_de_negocio",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Alterar status da compra após entrega",
+      "description": "Toda compra selecionada como entregue por um administrador deve ter seu status alterado para ENTREGUE.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0041",
+      "category": "regra_de_negocio",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Gerar pedido de troca",
+      "description": "Todo item selecionado para troca deve gerar um pedido de troca. Este pedido deverá terá o status EM TROCA. Caso o cliente solicite a troca de toda a compra o status do pedido deverá ser EM TROCA.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0042",
+      "category": "regra_de_negocio",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Alterar status do pedido após recebimento de troca",
+      "description": "Ao confirmar que os itens de um pedido de troca ou uma compra com status EM TROCA foi recebido o status do pedido ou compra deverá ser TROCADO.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0043",
+      "category": "regra_de_negocio",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Validação para solicitar troca",
+      "description": "Somente itens de pedidos com status ENTREGUE poderão receber solicitação de troca.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0044",
+      "category": "regra_de_negocio",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Bloqueio de produtos",
+      "description": "Ao adicionar o item no carrinho, este deverá ser temporiamente bloqueado para que novas compras não sejam solicitadas. Tal bloqueio só deve ser retirado no caso da compra que gerou tal status não ser efetivada ou aprovada em um prazo parametrizado, o prazo deve levar em consideração o momento do bloqueio. Obs.: O prazo parametrizado deve ser relativo ao último item incluído no carrinho.",
+      "status": "todo"
+    },
+    {
+      "id": "RNF0045",
+      "category": "regra_de_negocio",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Retirar item do carrinho",
+      "description": "Toda vez que um item for desbloqueado todos os itens do mesmo produto deverão ser retirados do carrinho de compra que gerou o prazo de bloqueio.",
+      "status": "todo"
+    },
+    {
+      "id": "RNF0046",
+      "category": "regra_de_negocio",
+      "entity": "Vendas",
+      "group": "Gerenciar Vendas Eletrônicas",
+      "title": "Gerar notificação de autorização de troca",
+      "description": "Quando o administrador autorizar uma troca o sistema deverá gerar uma notificação sobre tal ao cliente.",
+      "status": "todo"
+    },
+
+    {
+      "id": "RF0051",
+      "category": "requisito_funcional",
+      "entity": "Estoque",
+      "group": "Controle de estoque",
+      "title": "Realizar entrada em estoque",
+      "description": "O sistema deve permitir que seja possível realizar entrada de itens de jogos em estoque. No registro de cada item, deve ser indicado o jogo já previamente cadastrado e a quantidade de itens do jogo.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0052",
+      "category": "requisito_funcional",
+      "entity": "Estoque",
+      "group": "Controle de estoque",
+      "title": "Calcular valor de venda",
+      "description": "O sistema deve calcular o valor de venda com base no valor de custo e o grupo de precificação. Sendo que o valor de venda será o valor de compra mais o percentual definido no grupo de precificação relacionado ao jogo.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0053",
+      "category": "requisito_funcional",
+      "entity": "Estoque",
+      "group": "Controle de estoque",
+      "title": "Dar baixa em estoque",
+      "description": "Para cada venda realizada deve-se dar baixa no estoque do total de itens vendidos.",
+      "status": "todo"
+    },
+    {
+      "id": "RF0054",
+      "category": "requisito_funcional",
+      "entity": "Estoque",
+      "group": "Controle de estoque",
+      "title": "Realizar reentrada em estoque",
+      "description": "O sistema deve realizar a reentrada de um item em estoque a partir da troca de um produto.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0051",
+      "category": "regra_de_negocio",
+      "entity": "Estoque",
+      "group": "Controle de estoque",
+      "title": "Validar dados de estoque",
+      "description": "Para cada entrada em estoque, deve ser obrigatoriamente informado o produto, a quantidade, o valor de custo, fornecedor, e a data de entrada dos itens de produto.",
+      "status": "todo"
+    },
+    {
+      "id": "RN005x",
+      "category": "regra_de_negocio",
+      "entity": "Estoque",
+      "group": "Controle de estoque",
+      "title": "Definir valor de item com diferentes custos",
+      "description": "Quando itens de um determinado jogo forem registrados com valores de custo diferentes deverá ser calculado o valor de venda com base no grupo de precificação, porém o valor de todos os itens deverá ser igual, considerando então o maior valor de custo.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0061",
+      "category": "regra_de_negocio",
+      "entity": "Estoque",
+      "group": "Controle de estoque",
+      "title": "Quantidade de itens",
+      "description": "Não deve ser permitido que seja realizado a entrada de itens de jogos com quantidade igual a zero.",
+      "status": "todo"
+    },
+    {
+      "id": "RN0062",
+      "category": "regra_de_negocio",
+      "entity": "Estoque",
+      "group": "Controle de estoque",
+      "title": "Valor de custo",
+      "description": "Para todo item deve haver um valor de custo.",
+      "status": "todo"
+    },
+    {
+      "id": "RNF0064",
+      "category": "regra_de_negocio",
+      "entity": "Estoque",
+      "group": "Controle de estoque",
+      "title": "Data de entrada",
+      "description": "Não deve ser permitido que itens sejam registrados sem que uma data de entrada seja registrada.",
+      "status": "todo"
+    }
+  ]
+}
